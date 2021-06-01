@@ -1,0 +1,21 @@
+PROCEDURE procudur(var x:INTEGER,var y:INTEGER)
+VAR
+   temp:INTEGER;
+BEGIN
+   temp:=x;
+   x:=y;
+   y:=temp;
+END
+ALGORITHM sort
+VAR
+    array : ARRAY_OF INTEGER[100];
+    i,j:INTEGER;
+BEGIN
+   FOR i  FROM 1 TO arr.length-1 STEP 1  DO
+      j:=i
+      WHILE (j>0 AND arr[j]>[j-1]) DO
+          procudur(arr[j-1],arr[j])
+          j:=j-1
+      END_WHILE
+   END_FOR
+END
